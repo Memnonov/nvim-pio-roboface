@@ -3,3 +3,4 @@
 compile_commands.json
 .framework
 .ccls
+compile_commands.json.bak
