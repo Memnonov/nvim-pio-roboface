@@ -25,7 +25,7 @@ EyePairState StringToEyePairState(const char* state) {
 
 
 // Konstruktori: Alustaa luokan Eye-viittaukset alustuslistassa
-Eye_Pair::Eye_Pair(Eye& Eye1, Eye& Eye2) : Eye1(Eye1), Eye2(Eye2), timeLastBlinked(0), prevDirX(0.0), prevDirY(0.0), timeAtLastGlance(0) {
+Eye_Pair::Eye_Pair(Eye& Eye1, Eye& Eye2) : Eye1(Eye1), Eye2(Eye2), timeLastBlinked(0), prevDirX(0.5), prevDirY(0.5), timeAtLastGlance(0) {
   this->current_mood = Moods::NEUTRAL; //Eyes are set to Neutral by default
   State = EyePairState::IDLE;
 }
